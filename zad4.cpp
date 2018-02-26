@@ -1,8 +1,9 @@
-#include < iostream >
-#include < vector >
-#include < fstream >
-#include < string >
-#include < set >
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include <set>
+#include <algorithm>
 
 using namespace std;
 
@@ -35,7 +36,7 @@ void task_4a()
     {
         lenght_test.clear();
         for(int j = 0; j < 5; j ++)
-            lenght_test.insert(tab[i][j].size())
+            lenght_test.insert(tab[i][j].size());
         if(lenght_test.size() == 1)
             solution_4a.push_back(input[i]);
     }
@@ -47,7 +48,7 @@ void task_4b()
     {
         anagram_test.clear();
         for(int j = 0; j < 5; j ++)
-            anagram_test.insert(tab[i][j])
+            anagram_test.insert(tab[i][j]);
         if(anagram_test.size() == 1)
             solution_4b.push_back(input[i]);
     }
@@ -55,15 +56,15 @@ void task_4b()
 
 void print_solution()
 {
-    cout << " Zadanie 4 : \n"
-         << "   a)\n"
+    cout << "Zadanie 4 : \n"
+         << "   a)\n";
     for(unsigned int i = 0; i < solution_4a.size(); i ++)
     {
         for(int j = 0; j < 5; j ++)
             cout << "       " << solution_4a[i][j] << " ";
         cout << endl;
     }
-         << "   b)\n"
+    cout << "   b)\n";
     for(unsigned int i = 0; i < solution_4b.size(); i ++)
     {
         for(int j = 0; j < 5; j ++)
